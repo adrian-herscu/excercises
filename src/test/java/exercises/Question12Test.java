@@ -18,15 +18,17 @@ public class Question12Test {
     @DataProvider
     private Object[][] data() {
         return new Object[][] {
-            { new char[] { 'a', 'b', 'c', 0 }, "cba" },
-            { new char[] { 'a', 'b', 'c', 'd', 0 }, "dcba" }
+            { new char[] { 0 }, new char[] { 0 } },
+            { new char[] { 'a', 0 }, new char[] { 'a', 0 } },
+            { new char[] { 'a', 'b', 'c', 0 }, new char[] { 'c', 'b', 'a', 0 } },
+            { new char[] { 'a', 'b', 'c', 'd', 0 }, new char[] { 'd', 'c', 'b', 'a', 0 } }
         };
     }
 
     @Test(dataProvider = "data")
     public void shouldReverseString(
         final char[] cstring,
-        final String expected) {
+        final char[] expected) {
         assertThat(
             Question12.reverse(cstring),
             equalTo(expected));
