@@ -3,9 +3,10 @@
  */
 package exercises;
 
-import static org.junit.Assert.*;
+import static org.hamcrest.MatcherAssert.*;
+import static org.hamcrest.Matchers.*;
 
-import org.junit.*;
+import org.testng.annotations.*;
 
 /**
  * 
@@ -14,17 +15,20 @@ import org.junit.*;
  *
  */
 public class Question12Test {
-
-    @Test
-    public void shouldReverseOddString() {
-        assertTrue(Question12.reverse(new char[] { 'a', 'b', 'c', 0 })
-            .equals("cba"));
+    @DataProvider
+    private Object[][] data() {
+        return new Object[][] {
+            { new char[] { 'a', 'b', 'c', 0 }, "cba" },
+            { new char[] { 'a', 'b', 'c', 'd', 0 }, "dcba" }
+        };
     }
 
-    @Test
-    public void shouldReverseEvenString() {
-        assertTrue(Question12.reverse(new char[] { 'a', 'b', 'c', 'd', 0 })
-            .equals("dcba"));
+    @Test(dataProvider = "data")
+    public void shouldReverseString(
+        final char[] cstring,
+        final String expected) {
+        assertThat(
+            Question12.reverse(cstring),
+            equalTo(expected));
     }
-
 }
