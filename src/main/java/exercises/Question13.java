@@ -7,7 +7,7 @@ public class Question13 {
     public static final char[] dedup(final char[] string) {
         final boolean[] charOccurs = new boolean[Character.MAX_VALUE];
 
-        for(int index = 0; index < string.length; index++) {
+        for(int index = 0; index < string.length && 0 != string[index]; index++) {
             if(charOccurs[string[index]]) {
                 shiftLeft(string, index--);
             } else {
