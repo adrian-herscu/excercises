@@ -3,8 +3,6 @@
  */
 package exercises;
 
-import static java.util.Arrays.*;
-
 import java.util.*;
 
 /**
@@ -16,8 +14,8 @@ import java.util.*;
 public class Question14 {
 
     public static boolean isAnagram(char[] string, char[] anagram) {
-        sort(string);
-        sort(anagram);
+        Arrays.sort(string);
+        Arrays.sort(anagram);
         return Arrays.equals(string, anagram);
     }
 
