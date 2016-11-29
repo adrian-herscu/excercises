@@ -32,7 +32,6 @@ public class Question16 {
      * @param matrix
      * @return
      */
-    // FIXME: rotates left
     public static long[][] rotateRightInPlace(long[][] matrix) {
         final int dimension = matrix.length;
         for (int layer = 0; layer < dimension / 2; layer++) {
