@@ -1,4 +1,4 @@
-package exercises;
+package exercises.arraystrings;
 
 /**
  * Created by adrian on 11/22/2016.

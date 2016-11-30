@@ -1,6 +1,8 @@
-package exercises;
+package exercises.arraystrings;
 
 import org.testng.annotations.Test;
+
+import exercises.arraystrings.*;
 
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;

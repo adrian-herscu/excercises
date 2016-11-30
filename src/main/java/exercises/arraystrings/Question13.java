@@ -1,4 +1,4 @@
-package exercises;
+package exercises.arraystrings;
 
 /**
  * @author adrian

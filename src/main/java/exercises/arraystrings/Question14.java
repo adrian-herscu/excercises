@@ -1,7 +1,7 @@
 /**
  * 
  */
-package exercises;
+package exercises.arraystrings;
 
 import java.util.*;
 

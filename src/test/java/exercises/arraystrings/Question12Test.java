@@ -1,12 +1,14 @@
 /**
  * 
  */
-package exercises;
+package exercises.arraystrings;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
 
 import org.testng.annotations.*;
+
+import exercises.arraystrings.*;
 
 /**
  * 

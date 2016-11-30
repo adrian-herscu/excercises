@@ -1,7 +1,9 @@
-package exercises;
+package exercises.arraystrings;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
+import exercises.arraystrings.*;
 
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
